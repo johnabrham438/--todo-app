@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>እቅድ Todo App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="to-do-list.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+   <div class="task-container">
+     <h1 class="title">Todo App</h1>
+     <div class="add-task-container">
+        <input type="text" placeholder="write task here" id="task-input" title="write here" class="task-input">
+        <button id="add-btn" class="add-btn">add</button>
+     </div>
+     <ul id="tasks" class="tasks-list-container">
+        
+     </ul>
+   </div>
+   <dialog id="message">
+    please write task
+    <button id="message-btn">ok</button>
+   </dialog>
+   <script src="index.js"></script>
+</body>
+</html>

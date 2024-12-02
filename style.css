@@ -1,0 +1,143 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: monospace;
+    
+}
+.task-container{
+    margin-top: 3rem;
+    text-align: center;
+    width: 100%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.add-task-container{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+.title{
+    font-size: 4rem;
+    color:  rgb(14, 130, 207);
+}
+.task-input{
+    width: 30rem;
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    padding-left: 1rem;
+    border: 1px solid  rgb(14, 130, 207);
+    background: transparent;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:  rgb(169, 216, 248);
+
+}
+.task-input::placeholder{
+    color:  rgba(75, 183, 255, 0.301);
+}
+.task-input:focus{
+    outline: 1px solid  rgb(23, 153, 240);
+}
+.task-input:hover{
+    border: 1px solid  rgb(28, 150, 231);
+}
+.add-btn{
+    width: 10rem;
+    height: 2.7rem;
+    border: 1px solid rgb(14, 130, 207);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    font-family: monospace;
+    background-color: rgb(37, 153, 230);
+    cursor: pointer;
+}
+.add-btn:hover{
+    background-color: rgb(109, 197, 255);
+}
+.add-btn:active{
+    background-color: rgb(155, 214, 253);
+}
+.tasks-list-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 90%;
+    align-items: center;
+    gap: 2rem;
+}
+.task{
+    display: flex;
+    flex-direction: row;
+    justify-content:  flex-start;
+    padding-left: 0.5rem;
+    gap: 1rem;
+    align-items: center;
+    width: 30%;
+    height: 100%;
+    border: 1px solid  rgb(14, 130, 207);
+    border-radius: 0.5rem;
+
+}
+p{
+    font-size: 1rem;
+    flex-wrap: wrap;
+}
+.delete-btn{
+    position: absolute;
+    margin-left: 27rem;
+    color: rgb(14, 130, 207);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+dialog{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 4rem;
+    gap: 1rem;
+    width: 13rem;
+    margin-top: 4rem;
+    font-size: 1.3rem;
+    height: 5rem;
+    color: white;
+    background-color: black;
+    border-radius: 0.5rem;
+    border: 1px solid rgb(14, 130, 207);
+    transition: 0.3s ease-out;
+}
+#message-btn{
+    width: 10rem;
+    height: 2rem;
+    border: 1px solid rgb(14, 130, 207);
+    background-color: rgb(23, 103, 156);
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+#message-btn:hover{
+    background-color: rgb(36, 151, 228);
+
+}
+@media screen and (max-width: 600px) {
+    
+    .task{
+        width: 90%;
+    }
+    .delete-btn{
+        margin-left: 20rem;
+    }
+}
+
