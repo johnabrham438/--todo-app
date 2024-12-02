@@ -131,10 +131,10 @@ dialog{
     background-color: rgb(36, 151, 228);
 
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     
     .task{
-        width: 80%;
+        width: 90%;
     }
     .delete-btn{
         margin-left: 15rem;
