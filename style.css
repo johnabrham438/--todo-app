@@ -90,11 +90,11 @@ body{
 
 }
 p{
-    font-size: 1rem;
+    font-size: 1.3rem;
 }
 .delete-btn{
     position: absolute;
-    margin-left: 27rem;
+    margin-left: 30rem;
     color: rgb(14, 130, 207);
     background: transparent;
     border: none;
@@ -105,7 +105,6 @@ p{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 1rem;
     padding: 4rem;
     gap: 1rem;
     width: 13rem;
