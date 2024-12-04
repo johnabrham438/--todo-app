@@ -4,7 +4,7 @@ body{
     align-items: center;
     justify-content: center;
     gap: 1rem;
-    background-color: white;
+    background-color: black;
     color: white;
     font-family: monospace;
     
@@ -132,12 +132,14 @@ p{
 
 }
 @media screen and (max-width: 500px) {
-    
+    .task-input{
+        width: 20rem;
+    }
     .task{
         width: 90%;
     }
     .delete-btn{
-        margin-left: 15rem;
+        margin-left: 23rem;
     }
 }
 
