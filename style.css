@@ -91,7 +91,6 @@ body{
 }
 p{
     font-size: 1rem;
-    flex-wrap: wrap;
 }
 .delete-btn{
     position: absolute;
@@ -139,7 +138,7 @@ p{
         width: 90%;
     }
     .delete-btn{
-        margin-left: 23rem;
+        margin-left: 20rem;
     }
 }
 
