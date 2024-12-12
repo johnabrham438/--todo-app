@@ -34,7 +34,8 @@ function createTask(task, taskIndex) {
     const taskLI = document.createElement("li");
     taskLI.className = "task";
     taskLI.innerHTML = `
-      <p>${task}</p>
+      <input type="checkbox" onclick="endTask()">
+      <p id="task">${task}</p>
       <button id="task-${taskIndex}" class="delete-btn" onclick="deleteTask(${taskIndex})">
         <i class="fa fa-trash"></i>
       </button>
@@ -61,4 +62,8 @@ function getTask(){
     const tasks = localStorage.getItem("tasks") || "[]";
     return JSON.parse(tasks);
 
+}
+function endTask(){
+    const task = document.getElementById("task");
+    task.style.textStyle = "line-through";
 }
